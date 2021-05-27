@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class BSTNode
 {
@@ -11,55 +12,80 @@ class Program
 {
     static void Add(BSTNode root, int value)
     {
-
         BSTNode temp = root;
 
-        
-
-        if (temp.Value > value)
+        while (temp != null)
         {
-            //left side
-            while(temp.Value > value)
+            if (value < temp.Value) // check wehter to go left or right by seeing if it is greater than or less than the roor
             {
-                //WHAT WE HAVE TO DO. fIND THE PLACE WHERE THE VALUE GOES BY INCRETING TEMP = TEMP.rIGHT
+                if (temp.Left == null) // if this is null then that means taht they is no value there
+                {
+                    BSTNode holder = new BSTNode();
+                    holder.Value = value;
+                    temp.Left = holder;
+                    break;
+                }
+                temp = temp.Left;
             }
-                    
-        }
-
-        if (temp.Value < value)
-        {
-            //right side
-        }
-
-        if(temp.Value == value)
-        {
-            //duplicate
-        }
-        if (temp.Right == null)
-            if (value > root.Value)
+            else
             {
-                root.Right.Value = value;
+                if (temp.Right == null)
+                {
+
+                    BSTNode holder = new BSTNode();
+                    holder.Value = value;
+                    temp.Right = holder;
+                    break;
+                }
+                temp = temp.Right;// move on to next value
             }
 
-        if (value < root.Value)
-        {
-            root.Left.Value = value;
         }
-
     }
+
+    // TODO
+    static List<int> InOrderTraversal(BSTNode root)
+    {
+        List<int> result = new List<int>();
+
+        // TODO: fill the list with values from the BST, in order
+        Stack<int> stack = new Stack<int>();
+
+
+        return result;
+    }
+
+
+
+
+    // Figure out how this works
+    static void traverseRecursive(BSTNode node, List<int> result)
+    {
+        if (node == null) return;
+
+        traverseRecursive(node.Left, result);
+
+        result.Add(node.Value);
+
+        traverseRecursive(node.Right, result);
+    }
+
 
     static void Main()
     {
         BSTNode root = new BSTNode() { Value = 42 };
 
         Random random = new Random();
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 2000; i++)
         {
-            int value = random.Next(1, 100);
-            Console.WriteLine(value);
-            Add(bst, value);
+            //int value = random.Next(1, 100);
+            //Console.WriteLine(value);
+            //Add(root, value);
+            Add(root, i);
         }
 
+        var result = new List<int>();
+        traverseRecursive(root, result);
         ;
     }
 }

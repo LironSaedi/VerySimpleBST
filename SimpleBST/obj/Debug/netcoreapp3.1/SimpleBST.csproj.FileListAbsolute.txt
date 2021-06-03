@@ -11,3 +11,16 @@ D:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.csproj.CoreCompileInput
 D:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.dll
 D:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.pdb
 D:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.genruntimeconfig.cache
+E:\SimpleBST\SimpleBST\bin\Debug\netcoreapp3.1\SimpleBST.exe
+E:\SimpleBST\SimpleBST\bin\Debug\netcoreapp3.1\SimpleBST.deps.json
+E:\SimpleBST\SimpleBST\bin\Debug\netcoreapp3.1\SimpleBST.runtimeconfig.json
+E:\SimpleBST\SimpleBST\bin\Debug\netcoreapp3.1\SimpleBST.runtimeconfig.dev.json
+E:\SimpleBST\SimpleBST\bin\Debug\netcoreapp3.1\SimpleBST.dll
+E:\SimpleBST\SimpleBST\bin\Debug\netcoreapp3.1\SimpleBST.pdb
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.csprojAssemblyReference.cache
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.AssemblyInfoInputs.cache
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.AssemblyInfo.cs
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.csproj.CoreCompileInputs.cache
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.dll
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.pdb
+E:\SimpleBST\SimpleBST\obj\Debug\netcoreapp3.1\SimpleBST.genruntimeconfig.cache

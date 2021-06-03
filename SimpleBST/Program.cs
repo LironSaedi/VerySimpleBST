@@ -6,10 +6,13 @@ class BSTNode
     public int Value { get; set; }
     public BSTNode Left { get; set; }
     public BSTNode Right { get; set; }
+
+  
 }
 
 class Program
 {
+ 
     static void Add(BSTNode root, int value)
     {
         BSTNode temp = root;
@@ -23,6 +26,7 @@ class Program
                     BSTNode holder = new BSTNode();
                     holder.Value = value;
                     temp.Left = holder;
+                    
                     break;
                 }
                 temp = temp.Left;
@@ -44,21 +48,46 @@ class Program
     }
 
     // TODO
-    static List<int> InOrderTraversal(BSTNode root)
+    static List<int> InOrderTraversal(BSTNode root, List<int> result)
     {
-        List<int> result = new List<int>();
+        
+        Stack<BSTNode> stack = new Stack<BSTNode>();
 
-        // TODO: fill the list with values from the BST, in order
-        Stack<int> stack = new Stack<int>();
+        BSTNode holder = root;
+
+        // loop while we have something in our stack
+           // loop all the way left
+           // push left nodes along the way
+           // collect value
+           // pop
+           // collect
+           // go right once
+           // start over (inner loop)
+
+        while (holder != null || result.Count > 0)
+        {
+            //have multiple loops inside 
+            if (holder != null)
+            {
+                stack.Push(holder);
+                holder = holder.Left;
+            }
+
+            else
+            {
+                holder = stack.Pop();
+                result.Add(holder.Value);
+                holder = holder.Right;
+            }
+        }
+
+        
 
 
         return result;
     }
 
 
-
-
-    // Figure out how this works
     static void traverseRecursive(BSTNode node, List<int> result)
     {
         if (node == null) return;
@@ -76,16 +105,27 @@ class Program
         BSTNode root = new BSTNode() { Value = 42 };
 
         Random random = new Random();
-        for (int i = 0; i < 2000; i++)
+        for (int i = 0; i < 25; i++)
         {
-            //int value = random.Next(1, 100);
-            //Console.WriteLine(value);
-            //Add(root, value);
-            Add(root, i);
+            int value = random.Next(1, 100);
+          Console.WriteLine(value);
+          Add(root, value);
+           // Add(root, i);
         }
 
-        var result = new List<int>();
-        traverseRecursive(root, result);
+      List<int> result = new List<int>();
+        InOrderTraversal(root, result);
+
+        Console.WriteLine("");
+
+        Console.WriteLine("");
+        Console.WriteLine("");
+        for (int i = 0; i < result.Count; i++)
+        {
+            Console.WriteLine(result[i]);
+        }
+     
+        //    traverseRecursive(root, result);
         ;
     }
 }

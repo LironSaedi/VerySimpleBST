@@ -6,6 +6,7 @@ namespace SimpleBST
 {
     class Stack<T>
     {
+        
         public int count { get; private set; }
         public T[] array;
 
@@ -59,5 +60,6 @@ namespace SimpleBST
             }
             return false;
         }
+        
     }
 }

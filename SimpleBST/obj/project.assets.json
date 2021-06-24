@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SimpleBST\\SimpleBST\\SimpleBST.csproj",
+      "projectUniqueName": "D:\\SimpleBST\\SimpleBST\\SimpleBST.csproj",
       "projectName": "SimpleBST",
-      "projectPath": "E:\\SimpleBST\\SimpleBST\\SimpleBST.csproj",
+      "projectPath": "D:\\SimpleBST\\SimpleBST\\SimpleBST.csproj",
       "packagesPath": "C:\\Users\\Liron.Saedi\\.nuget\\packages\\",
-      "outputPath": "E:\\SimpleBST\\SimpleBST\\obj\\",
+      "outputPath": "D:\\SimpleBST\\SimpleBST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
